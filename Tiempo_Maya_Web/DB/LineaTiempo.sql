@@ -47,7 +47,7 @@ CREATE TABLE `Cargador` (
   `nombre` varchar(10) NOT NULL,
   `descripcion` varchar(45) NOT NULL,
   `fechaInicio` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -58,7 +58,7 @@ CREATE TABLE `Cargador` (
 CREATE TABLE `Categoria` (
   `idCategoria` int NOT NULL,
   `nombre` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `Categoria`
@@ -79,7 +79,7 @@ INSERT INTO `Categoria` (`idCategoria`, `nombre`) VALUES
 CREATE TABLE `Categorizar` (
   `idHechoHistorico` int NOT NULL,
   `idCategoria` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `Categorizar`
@@ -102,7 +102,7 @@ INSERT INTO `Categorizar` (`idHechoHistorico`, `idCategoria`) VALUES
 CREATE TABLE `DiasCholqij` (
   `dia` int NOT NULL,
   `idNahual` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE `Edicion` (
   `idHechoHistorico` int NOT NULL,
   `fecha` date NOT NULL,
   `creacion` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `Edicion`
@@ -142,7 +142,7 @@ CREATE TABLE `HechoHistorico` (
   `fechaFinal` date NOT NULL,
   `titulo` varchar(150) DEFAULT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `HechoHistorico`
@@ -168,7 +168,7 @@ CREATE TABLE `Nahual` (
   `fechaInicio` date NOT NULL,
   `significado` varchar(25) DEFAULT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -179,7 +179,7 @@ CREATE TABLE `Nahual` (
 CREATE TABLE `Rol` (
   `idRol` int NOT NULL,
   `tipo` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `Rol`
@@ -202,7 +202,7 @@ CREATE TABLE `Rueda1` (
   `nahual` int NOT NULL,
   `fecha` date NOT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -215,7 +215,7 @@ CREATE TABLE `Rueda2` (
   `nahual` int NOT NULL,
   `fecha` date NOT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -228,7 +228,7 @@ CREATE TABLE `Rueda3` (
   `nahual` int NOT NULL,
   `fecha` date NOT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -242,7 +242,7 @@ CREATE TABLE `RuedaCalendarica` (
   `idRueda2` int NOT NULL,
   `idRueda3` int NOT NULL,
   `descripcion` varchar(5000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -259,7 +259,7 @@ CREATE TABLE `Usuario` (
   `nacimiento` date DEFAULT NULL,
   `telefono` varchar(15) DEFAULT NULL,
   `rol` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `Usuario`
@@ -308,7 +308,7 @@ CREATE TABLE `Winal` (
   `descripcion` varchar(45) NOT NULL,
   `dias` int DEFAULT NULL,
   `nombreCargador` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
