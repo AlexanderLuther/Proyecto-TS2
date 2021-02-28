@@ -2,7 +2,7 @@
     //Ruta de la aplicacion
     define('APP_PATH', dirname(dirname(__FILE__)));
     //Ruta url
-    define('URL_PATH','localhost/tiempomaya.com');
+    define('URL_PATH','http://localhost/tiempomaya.com');
     //Nombre del sitio
     define('SITE_NAME','Tiempo Maya');
 

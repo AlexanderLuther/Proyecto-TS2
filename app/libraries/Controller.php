@@ -1,18 +1,22 @@
 <?php 
     class Controller{
 
+        public function __construct(){
+
+        }
+
         //Cargar modelo
         public function getModel($model){
-            require_once '../app/models/' . $model . '.php';
+            require '../app/models/' . $model . '.php';
             return new $model();
         }
 
         //Cargar vista
         public function getView($view, $params = []){
             if(file_exists('../app/views/' . $view . '.php')){
-                require_once '../app/views/' . $view . '.php';
+                require '../app/views/' . $view . '.php';
             } else{
-                die('La vista no existe.');
+                die('../app/views/' . $view . '.php -> La vista no existe.');
             }
         }
     }
