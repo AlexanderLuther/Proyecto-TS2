@@ -19,8 +19,8 @@
          */
         public function index(){
             $this->getView('pages/calendarios/CalendarioHaab', [
-                'tittle' => 'Calendario Haab',
-                'currentMenu' => '2'
+                ['tittle' => 'Calendario Haab',
+                'currentMenu' => '2']
             ]);
         }
 

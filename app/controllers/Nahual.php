@@ -18,8 +18,8 @@
          */
         public function index(){
             $this->getView('pages/nahuales/nahual', [
-                'tittle' => 'Nahuales',
-                'currentMenu' => '5'
+                ['tittle' => 'Nahuales',
+                'currentMenu' => '5']
             ]);
         }
 

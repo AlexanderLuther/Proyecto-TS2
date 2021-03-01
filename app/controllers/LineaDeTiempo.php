@@ -9,8 +9,8 @@
 
         public function index(){
             $this->getView('pages/lineaDeTiempo/LineaDeTiempo', [
-                'tittle' => 'Linea de Tiempo',
-                'currentMenu' => '1'
+                ['tittle' => 'Linea de Tiempo',
+                'currentMenu' => '1']
             ]);
         }
 

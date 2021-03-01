@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +17,7 @@
     <!-- Mensaje de Bienvenida -->  
     <section id="inicio">
       <div class="inicio-container">
-        <h1>Bienvenido al Tiempo Maya</h1>
+        <h1>Bienvenido al Tiempo Maya <?php echo $_SESSION['username']?> </h1>
       </div>
     </section>
     <!-- /Section -->

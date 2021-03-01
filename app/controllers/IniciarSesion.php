@@ -1,11 +1,9 @@
 <?php
 
-    class Home extends Controller{
-
-        private $userModel; 
+    class IniciarSesion extends Controller{
 
         public function __construct(){
-            
+        
         }
 
         /**
@@ -20,12 +18,12 @@
          * 5 Nahuales
          */
         public function index(){ 
-            $this->getView('pages/home', [
-                ['tittle' => 'Tiempo Maya',
-                'currentMenu' => '0']
+            $this->getView('pages/usuarios/iniciarSesion', [
+                ['tittle' => 'Iniciar Sesion',
+                'currentMenu' => '6']
             ]);
         }
-        
+
     }
 
 ?>

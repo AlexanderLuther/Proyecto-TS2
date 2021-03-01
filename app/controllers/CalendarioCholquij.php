@@ -18,8 +18,8 @@
          */
         public function index(){
             $this->getView('pages/calendarios/CalendarioCholqij', [
-                'tittle' => 'Calendario Cholquij',
-                'currentMenu' => '3'
+                ['tittle' => 'Calendario Cholquij',
+                'currentMenu' => '3']
             ]);
         }
 

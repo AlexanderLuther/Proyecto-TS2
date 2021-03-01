@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
   
@@ -297,7 +299,7 @@
     <!-- Scripts -->
     <?php require '../app/views/includes/scripts.php'; ?>
     <!-- /Scripts -->
-
+    
   </body>
   <!-- /Body -->
 </html>

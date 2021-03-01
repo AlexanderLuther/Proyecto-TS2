@@ -20,26 +20,17 @@ $idhecho = -1;
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 
-<head>
-    <title>Linea de Tiempo</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/estiloLineaTiempo.css" rel="stylesheet">
-</head>
+    <!-- Header -->
+    <?php require '../app/views/includes/header.php'; ?>
+    <link href="<?php echo URL_PATH;?>/css/estiloLineaTiempo.css" rel="stylesheet">
+    <!-- Header -->
 
-<body>
+    <!-- Body -->
+    <body>
 
-    
-    <div>
-        <header id="header" style="background-color: #1C1C1C;">
-            <?php include 'BarradeNavegacion.php'; ?>
-        </header>
-    </div>
+        <!-- Navbar-->
+        <?php require '../app/views/includes/navbar.php'; ?>
+        <!-- /Navbar-->
 
     <section>
         <div class="container" style="padding-top: 120px; height:100px">

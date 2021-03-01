@@ -26,22 +26,10 @@
             }
         }
 
-        /**
-         * Metodo que prepara una sentencia para su ejecucion.
-         * @return StatementObject
-         */
-        private function setQuery($sql){
-            try{
-                return $this->dataBaseHandler->prepare($sql);
-            } catch(PDOException $ex){
-                echo 'Exception -> ';
-                var_dump($ex->getMessage());
-            }
-        }
 
         /**
          * Metodo que ejecuta una consulta.
-         */        
+         */   
         public function executeUpdate($sql){
             $statement = $this->setQuery($sql);
             if(isset($statement)){
@@ -52,16 +40,12 @@
         /**
          * Metodo que ejecuta una consulta, obtiene el resultado de la 
          * consulta y lo retorna. 
-         */        
-        public function executeQuery($sql){
-            $statement = $this->setQuery($sql);
-            if(isset($statement)){
-                $statement->execute($sql);
-                return  $statement->fetchAll(PDO::FETCH_OBJ);
-            } 
-            return null;
+         */    
+        public function executeQuery($sql, $params = []){;
+            $statement = $this->dataBaseHandler->prepare($sql);
+            $statement->execute($params);
+            return $statement->fetch(PDO::FETCH_BOTH);
         }
-
     }
 
 ?> 
